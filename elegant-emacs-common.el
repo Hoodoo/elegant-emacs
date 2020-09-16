@@ -35,17 +35,17 @@
 (setq default-frame-alist
       (append (list '(width  . 72) '(height . 40)
                     '(vertical-scroll-bars . nil)
-                    '(internal-border-width . 24)
-                    '(font . "Roboto Mono Light 14"))))
+                    '(internal-border-width . 12)
+                    '(font . "Roboto Mono Light 13"))))
 (set-frame-parameter (selected-frame)
-                     'internal-border-width 24)
+                     'internal-border-width 12)
 ;;; -------------------------------------------------------------------
 
 
 ;;; Line cursor and no blink
 ;;; -------------------------------------------------------------------
 (set-default 'cursor-type  '(bar . 1))
-(blink-cursor-mode 0)
+(blink-cursor-mode 1)
 ;;; -------------------------------------------------------------------
 
 
